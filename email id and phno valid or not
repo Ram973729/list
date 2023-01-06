@@ -1,0 +1,12 @@
+n=input('Email:')
+p=input('Phno:')
+c=0
+f=int(p[0])
+if f>5 and len(p)==10 and p.isdigit():
+    c=c+1
+if n.endswith('@gmail.com'):
+    c=c+1
+if c==2:
+    print('Registration successfully.')
+else:
+    print('Check your details.')
